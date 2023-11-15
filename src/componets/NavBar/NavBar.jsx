@@ -1,11 +1,17 @@
 import { CardWidget } from "../CardWidget/CardWidget"
+import { Link, NavLink } from "react-router-dom"
 
 export const NavBar = () => {
   return (
-   <nav className="d-flex" >
+   <nav className="container mt-2 d-flex" >
+      <ul >
+      <li >
+      <NavLink to="home">Inicio</NavLink>
+      </li>
+    </ul>
     <ul >
       <li >
-        <a  href="">Categorias</a>
+      <NavLink to="category">Categorias</NavLink>
       </li>
     </ul>
     <ul>
@@ -35,7 +41,7 @@ export const NavBar = () => {
     </ul>
     <ul>
       <li>
-        <a href=""><CardWidget/> </a>
+        <NavLink to="cart"><CardWidget/> </NavLink>
       </li>
     </ul>
 

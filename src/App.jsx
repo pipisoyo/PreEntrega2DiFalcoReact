@@ -1,4 +1,6 @@
-import { ItemListContainer } from './componets/ItemListContainer/ItemListContainer'
+import { CardWidget } from './componets/CardWidget/CardWidget'
+import { Cart } from './componets/Cart/Cart'
+import { CharacterListContainer } from './componets/CharacterListContainer/CharacterListContainer'
 import { NavBar } from './componets/NavBar/NavBar'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
@@ -10,7 +12,8 @@ export const App = () => {
     <BrowserRouter>
     <NavBar/>
     <Routes>
-    <Route path="/" element={ <ItemListContainer menssage={"Bienvenido"}/> } />
+    <Route path='/cart' element={<Cart/>}/>
+    <Route path="/home" element={ <CharacterListContainer/> } />
     </Routes>
     </BrowserRouter>
     </>
