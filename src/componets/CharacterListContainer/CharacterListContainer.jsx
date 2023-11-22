@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getProducts } from "../../products";
 import { CharacterList } from "../CharacterList/CharacterList";
-//import { Card } from "./Card";
+
 
 
 export const CharacterListContainer = () => {

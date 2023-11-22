@@ -14,9 +14,9 @@ export const Character = ({ nombreProducto , precio , imagen , stock , rubro, id
     />
 
   <p>Precio : ${precio}</p>
-  
-     {/* <Count max={stock} /> */}
-    <Link to={`./Character.jsx/${id}`}>
+
+    
+    <Link to={`/detalles/${id}`}>
     <Button text="Descripcion" variant="btn-secondary" />
 </Link>
     </div>

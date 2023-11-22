@@ -199,7 +199,7 @@ export const getProducts = () => {
         if (products.length > 0) {
             setTimeout(() => {
                 resolve(products)
-            }, 3000);
+            }, 1500);
             
         }else{
             reject("No hay productos")
@@ -207,3 +207,19 @@ export const getProducts = () => {
         }
     )
     }
+
+    export const getProductsById = (id) => {
+        return new Promise((resolve, reject) => {
+            if (products.length > 0) {
+                const selec = products.filter((product) => product.id == id);
+                setTimeout(() => {
+                    resolve(selec);
+                    console.log(products)
+                }, 1500);
+                
+            }else{
+                reject("No se encuentrea el producto")
+            }
+            }
+        )
+        }
