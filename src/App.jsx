@@ -5,6 +5,8 @@ import { Character } from './componets/Character/Character'
 import { CharacterListContainer } from './componets/CharacterListContainer/CharacterListContainer'
 import { NavBar } from './componets/NavBar/NavBar'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { CategoryListContainer } from './componets/CategoryListContainer/CategoryListContainer'
+import { Categorys } from './componets/Categorys/Categorys'
 
 export const App = () => {
   return (
@@ -17,6 +19,8 @@ export const App = () => {
     <Route path="/" element={ <CharacterListContainer/> } />
     <Route path="/home" element={ <CharacterListContainer/> } />
     <Route path="/detalles/:id" element={ <Detalles/> } />
+    <Route path='/categoryList' element={<CategoryListContainer/>}/>
+    <Route path='/category' element={<Categorys/>}/>
     </Routes>
     </BrowserRouter>
     </>

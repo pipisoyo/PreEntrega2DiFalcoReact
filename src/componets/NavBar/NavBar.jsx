@@ -11,7 +11,7 @@ export const NavBar = () => {
     </ul>
     <ul >
       <li >
-      <NavLink to="category">Categorias</NavLink>
+      <NavLink to="categoryList">Categorias</NavLink>
       </li>
     </ul>
     <ul>

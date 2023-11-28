@@ -1,3 +1,4 @@
+
 import { Character } from "../Character/Character";
 
 export const CharacterList = ( {products}) => {
