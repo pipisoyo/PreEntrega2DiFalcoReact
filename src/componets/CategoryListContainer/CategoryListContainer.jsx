@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getProducts } from "../../products";
-import { CategoryList } from "../CategoryList/CategoryList";
+import { CategoryList}  from "../CategoryList/CategoryList";
 
 export const CategoryListContainer = () => {
     const [products, setProducts] = useState([]);
@@ -25,9 +25,11 @@ export const CategoryListContainer = () => {
       {isLoading ? (
         <h3>Cargando categorias...</h3>
       ) : (
-          <CategoryList products={products}/>      
+        
+          <CategoryList products={products}/> 
+               
       )}
-      {/* { console.log(category)} */}
+
     </div>
     </> 
   );

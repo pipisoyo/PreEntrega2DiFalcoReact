@@ -13,7 +13,6 @@ export const Detalles = () => {
       .then((resp) => {
         {
           setProduct(...resp);
-          console.log;
           setisLoading(!isLoading);
         }
       })

@@ -1,8 +1,10 @@
 import React from 'react'
-import { CharacterListContainer } from '../CharacterListContainer/CharacterListContainer'
+import { ItemListContainer } from '../ItemListContainer/ItemListContainer'
+import { useParams } from 'react-router-dom'
 
-export const RubroFilter = ({rubro}) => {
+export const RubroFilter = () => {
+  const {rubro} = useParams()
   return (
-    <CharacterListContainer rubro={rubro}/>
+   <ItemListContainer filter={rubro}/>
   )
 }

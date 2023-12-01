@@ -6,12 +6,12 @@ export const NavBar = () => {
    <nav className="container mt-2 d-flex" >
       <ul >
       <li >
-      <NavLink to="home">Inicio</NavLink>
+      <NavLink to="/">Inicio</NavLink>
       </li>
     </ul>
     <ul >
       <li >
-      <NavLink to="categoryList">Categorias</NavLink>
+      <NavLink to="category">Categorias</NavLink>
       </li>
     </ul>
     <ul>
