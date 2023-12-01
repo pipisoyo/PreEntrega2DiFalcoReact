@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import { getProducts } from "../../products";
 import { ItemList } from "../ItemList/ItemList";
 
-
-
-export const ItemListContainer = ({filter = "all"}) => {
+export const ItemListContainer = ({ filter = "all" }) => {
   const [products, setProducts] = useState([]);
   const [isLoading, setisLoading] = useState(true);
 
@@ -19,7 +17,7 @@ export const ItemListContainer = ({filter = "all"}) => {
 
   let filteredProducts = products;
   if (filter !== "all") {
-    filteredProducts = products.filter(product => product.rubro === filter);
+    filteredProducts = products.filter((product) => product.rubro === filter);
   }
 
   return (
@@ -27,7 +25,7 @@ export const ItemListContainer = ({filter = "all"}) => {
       {isLoading ? (
         <h3>Cargando productos...</h3>
       ) : (
-        <ItemList products={filteredProducts}/>      
+        <ItemList products={filteredProducts} />
       )}
     </div>
   );

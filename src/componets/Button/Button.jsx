@@ -1,6 +1,5 @@
-
-export const  Button = ( {text = "Botón", variant = "btn btn-primary", functionClick}) => {
+export const Button = ({ text = "Botón", variant = "btn btn-primary", functionClick }) => {
   return (
-    <button className={`btn ${variant} m-2`} onClick={functionClick} >{text}</button>
-  )
-}
+    <button className={`btn ${variant} m-2`} onClick={functionClick}>{text}</button>
+  );
+};

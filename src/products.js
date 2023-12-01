@@ -215,7 +215,7 @@ export const getProducts = () => {
                 setTimeout(() => {
                     resolve(selec);
                     console.log(products)
-                }, 1500);
+                }, 0);
                 
             }else{
                 reject("No se encuentrea el producto")

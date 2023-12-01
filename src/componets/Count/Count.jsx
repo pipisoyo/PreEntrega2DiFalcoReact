@@ -1,30 +1,28 @@
-import { useState } from "react"
-import { Button } from "../Button/Button"
+import { useState } from "react";
+import { Button } from "../Button/Button";
 
-export const Count = ({initial = 0 , max}) => {
+export const Count = ({ initial = 0, max }) => {
+  const [count, setCount] = useState(initial);
 
-const [count, setCount] = useState(initial)
-
-const increment = () =>{
+  const increment = () => {
     if (count === max) {
-      return setCount(count)
+      return setCount(count);
     }
-    setCount(count +1);
-}
+    setCount(count + 1);
+  };
 
-const decrement = () =>{
-   if (count === 0 ){
-    return setCount(0);
-   }
-   setCount(count -1);
-}
-
+  const decrement = () => {
+    if (count === 0) {
+      return setCount(0);
+    }
+    setCount(count - 1);
+  };
 
   return (
     <>
-    <Button text="+" functionClick={increment}/>
-    <strong> {count} </strong>
-    <Button text="-" functionClick={decrement}/>
+      <Button text="+" functionClick={increment} />
+      <strong> {count} </strong>
+      <Button text="-" functionClick={decrement} />
     </>
-  )
-}
+  );
+};
